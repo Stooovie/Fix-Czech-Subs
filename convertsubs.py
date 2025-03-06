@@ -4,6 +4,12 @@ import os
 import chardet
 import shutil
 
+# Specify the directory containing subtitle files
+directory_to_scan = "/PATH/TO/YOUR/FILES"
+scan_directory(directory_to_scan)
+
+
+
 def clean_and_decode(raw_data):
     """Attempt to clean and decode the raw data."""
     try:
@@ -67,6 +73,4 @@ def scan_directory(directory):
                 convert_to_utf8(file_path)
 
 
-# Specify the directory containing subtitle files
-directory_to_scan = "/Volumes/Public/Video/Movies"
-scan_directory(directory_to_scan)
+
